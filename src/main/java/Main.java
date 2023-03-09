@@ -10,6 +10,7 @@ public class Main {
     private static IGame prepareGame() {
         NumberTaker taker = new NumberTaker();
         Scanner scanner = new Scanner(System.in);
-        return new LottoGame(taker, scanner);
+        NumberMaker numberMaker = new NumberMaker();
+        return new LottoGame(taker, scanner, numberMaker);
     }
 }

@@ -1,16 +1,13 @@
-import java.util.HashSet;
-import java.util.Random;
+import java.security.SecureRandom;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 
 public class NumberMaker {
 
-    static Set<Integer> randomNumbers = new HashSet<>();
-
-    public static void getRandomNumbers() {
-        Random random = new Random();
-        while (randomNumbers.size() < ConfigLottoGame.NUMBERS_IN_GAME) {
-            int randomNumber;
-        }
+    public Set<Integer> getRandomNumbers() {
+        SecureRandom random = new SecureRandom();
+        return random.ints(ConfigLottoGame.NUMBERS_IN_GAME, ConfigLottoGame.MIN_NUMBER_ORIGIN, ConfigLottoGame.MAX_NUMBERS_BOUND).boxed().collect(Collectors.toSet());
     }
+
 }
