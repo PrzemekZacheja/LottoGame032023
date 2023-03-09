@@ -11,6 +11,7 @@ public class Main {
         NumberTaker taker = new NumberTaker();
         Scanner scanner = new Scanner(System.in);
         NumberMaker numberMaker = new NumberMaker();
-        return new LottoGame(taker, scanner, numberMaker);
+        MessageProvider messageProvider = new MessageProvider();
+        return new LottoGame(taker, scanner, numberMaker, messageProvider);
     }
 }

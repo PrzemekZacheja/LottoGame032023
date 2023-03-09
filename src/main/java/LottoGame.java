@@ -9,17 +9,15 @@ public class LottoGame implements IGame {
     private final NumberTaker numberTaker;
     private final Scanner scanner;
     private final NumberMaker numberMaker;
-
-    public LottoGame(NumberTaker numberTaker, Scanner scanner, NumberMaker numberMaker) {
-        this.numberTaker = numberTaker;
-        this.scanner = scanner;
-        this.numberMaker = numberMaker;
-    }
+    private final MessageProvider messageProvider;
 
     @Override
     public void startGame() {
         Set<Integer> sixNumbersFromPlayer = numberTaker.takeSixNumbersFromPlayer(scanner);
+        messageProvider.showInputNumbersFromPlayer(sixNumbersFromPlayer);
         Set<Integer> randomNumbers = numberMaker.getRandomNumbers();
+        messageProvider.showRandomWinnerNumbers(randomNumbers);
+        boolean result = CalculatorResult.calculateResult(sixNumbersFromPlayer, randomNumbers);
 
     }
 
