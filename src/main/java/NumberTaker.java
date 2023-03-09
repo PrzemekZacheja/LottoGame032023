@@ -13,7 +13,12 @@ public class NumberTaker {
     public Set<Integer> takeSixNumbersFromPlayer(Scanner scanner) {
         while (setOfNumbers.size() < ConfigLottoGame.NUMBERS_IN_GAME) {
             int number = scanner.nextInt();
-            setOfNumbers.add(number);
+            if (number >= ConfigLottoGame.MIN_NUMBER_ORIGIN && number <= ConfigLottoGame.MAX_BOUND_NUMBER_FROM_USER) {
+                setOfNumbers.add(number);
+            } else {
+                System.out.printf(MessageProvider.INPUT_OVER_THE_RANGE, ConfigLottoGame.MIN_NUMBER_ORIGIN,
+                        ConfigLottoGame.MAX_BOUND_NUMBER_FROM_USER);
+            }
         }
         scanner.close();
         return setOfNumbers;
