@@ -18,6 +18,7 @@ public class LottoGame implements IGame {
         Set<Integer> randomNumbers = numberMaker.getRandomNumbers();
         messageProvider.showRandomWinnerNumbers(randomNumbers);
         boolean result = CalculatorResult.calculateResult(sixNumbersFromPlayer, randomNumbers);
+        MessageProvider.printResult(result);
 
     }
 

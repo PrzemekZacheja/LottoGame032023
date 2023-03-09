@@ -4,17 +4,28 @@ public class MessageProvider {
 
     public static final String YOURS_NUMBERS_ARE = "Yours numbers are: ->";
     public static final String THE_WINNER_NUMBERS_ARE = "The WINNER numbers are: ";
+    public static final String WINNER_MESSAGE = "You are lucky guy, YOU WIN";
+    public static final String LOOSE_MESSAGE = "Oh my Gosh, you LOOSE";
 
     public MessageProvider() {
     }
 
+    public static void printResult(boolean result) {
+        System.out.println(result ? WINNER_MESSAGE : LOOSE_MESSAGE);
+    }
+
     void showInputNumbersFromPlayer(Set<Integer> sixNumbersFromPlayer) {
         System.out.println(YOURS_NUMBERS_ARE);
-        System.out.println(sixNumbersFromPlayer.toArray().toString());
+        printSet(sixNumbersFromPlayer);
+    }
+
+    private void printSet(Set<Integer> setToPrint) {
+        setToPrint.forEach(a -> System.out.print(a + " "));
+        System.out.println();
     }
 
     public void showRandomWinnerNumbers(Set<Integer> randomNumbers) {
         System.out.println(THE_WINNER_NUMBERS_ARE);
-        System.out.println(randomNumbers.toArray().toString());
+        printSet(randomNumbers);
     }
 }
