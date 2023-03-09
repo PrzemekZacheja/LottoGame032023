@@ -6,6 +6,8 @@ public class MessageProvider {
     public static final String THE_WINNER_NUMBERS_ARE = "The WINNER numbers are: ";
     public static final String WINNER_MESSAGE = "You are lucky guy, YOU WIN";
     public static final String LOOSE_MESSAGE = "Oh my Gosh, you LOOSE";
+    public static final String INPUT_NOT_NUMBER = "Error, You must input only numbers";
+    public static final String INPUT_OVER_THE_RANGE = "Your number is over the range from %d to %d";
 
     public MessageProvider() {
     }
