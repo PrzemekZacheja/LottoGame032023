@@ -1,3 +1,11 @@
+package minigames;
+
+import minigames.lotto.IGame;
+import minigames.lotto.LottoGame;
+import minigames.lotto.input.NumberTaker;
+import minigames.lotto.logic.NumberMaker;
+import minigames.lotto.messageprovider.MessageProvider;
+
 import java.util.Scanner;
 
 public class Main {

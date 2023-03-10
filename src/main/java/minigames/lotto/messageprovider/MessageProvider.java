@@ -1,3 +1,5 @@
+package minigames.lotto.messageprovider;
+
 import java.util.Set;
 
 public class MessageProvider {
@@ -17,7 +19,7 @@ public class MessageProvider {
         System.out.println(result ? WINNER_MESSAGE : LOOSE_MESSAGE);
     }
 
-    void showInputNumbersFromPlayer(Set<Integer> sixNumbersFromPlayer) {
+    public void showInputNumbersFromPlayer(Set<Integer> sixNumbersFromPlayer) {
         System.out.println(YOURS_NUMBERS_ARE);
         printSet(sixNumbersFromPlayer);
     }

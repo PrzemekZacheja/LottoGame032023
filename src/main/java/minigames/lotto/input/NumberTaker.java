@@ -1,3 +1,8 @@
+package minigames.lotto.input;
+
+import minigames.lotto.config.ConfigLottoGame;
+import minigames.lotto.messageprovider.MessageProvider;
+
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;

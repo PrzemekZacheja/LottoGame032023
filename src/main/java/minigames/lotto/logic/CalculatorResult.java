@@ -1,3 +1,5 @@
+package minigames.lotto.logic;
+
 import java.util.Set;
 
 public class CalculatorResult {
