@@ -35,6 +35,19 @@ class NumberTakerTest {
         assertThat(sixNumbersFromPlayer).isEqualTo(correct);
     }
 
+    @Test
+    void should_return_correct_Set_when_not_numbers_are_input() {
+        //given
+        NumberTaker taker = new NumberTaker();
+        String input = "1 2 asd 3 4 5 6";
+        Scanner scanner = mockScannerInput(input);
+        Set<Integer> correct = Set.of(1, 2, 3, 4, 5, 6);
+        //when
+        Set<Integer> sixNumbersFromPlayer = taker.takeSixNumbersFromPlayer(scanner);
+        //then
+        assertThat(sixNumbersFromPlayer).isEqualTo(correct);
+    }
+
 
     private Scanner mockScannerInput(String input) {
         InputStream inputStream = System.in;
