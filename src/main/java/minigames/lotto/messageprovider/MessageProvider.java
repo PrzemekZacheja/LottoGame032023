@@ -15,7 +15,7 @@ public class MessageProvider {
     public MessageProvider() {
     }
 
-    public static void printResult(boolean result) {
+    public void printResult(boolean result) {
         System.out.println(result ? WINNER_MESSAGE : LOOSE_MESSAGE);
     }
 

@@ -15,7 +15,7 @@ public class NumberTaker {
         setOfNumbers = new HashSet<>();
     }
 
-    private static boolean isInRange(int number) {
+    private boolean isInRange(int number) {
         return number >= ConfigLottoGame.MIN_NUMBER_ORIGIN && number <= ConfigLottoGame.MAX_BOUND_NUMBER_FROM_USER;
     }
 
