@@ -1,4 +1,4 @@
-package minigames.lotto;
+package minigames.games;
 
 public interface IGame {
 

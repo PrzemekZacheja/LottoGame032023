@@ -1,4 +1,4 @@
-package minigames.lotto.messageprovider;
+package minigames.games.lotto.messageprovider;
 
 import java.util.Set;
 

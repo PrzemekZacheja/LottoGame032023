@@ -1,6 +1,6 @@
-package minigames.lotto.logic;
+package minigames.games.lotto.logic;
 
-import minigames.lotto.config.ConfigLottoGame;
+import minigames.games.lotto.config.ConfigLottoGame;
 
 import java.security.SecureRandom;
 import java.util.Set;

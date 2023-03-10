@@ -1,4 +1,4 @@
-import minigames.lotto.logic.NumberMaker;
+import minigames.games.lotto.logic.NumberMaker;
 import org.junit.jupiter.api.Test;
 
 import java.util.Set;

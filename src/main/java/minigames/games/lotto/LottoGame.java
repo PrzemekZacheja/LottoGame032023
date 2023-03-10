@@ -1,10 +1,11 @@
-package minigames.lotto;
+package minigames.games.lotto;
 
 import lombok.Data;
-import minigames.lotto.input.NumberTaker;
-import minigames.lotto.logic.CalculatorResult;
-import minigames.lotto.logic.NumberMaker;
-import minigames.lotto.messageprovider.MessageProvider;
+import minigames.games.IGame;
+import minigames.games.lotto.input.NumberTaker;
+import minigames.games.lotto.logic.CalculatorResult;
+import minigames.games.lotto.logic.NumberMaker;
+import minigames.games.lotto.messageprovider.MessageProvider;
 
 import java.util.Scanner;
 import java.util.Set;

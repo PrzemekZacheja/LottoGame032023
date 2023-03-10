@@ -1,4 +1,4 @@
-import minigames.lotto.logic.CalculatorResult;
+import minigames.games.lotto.logic.CalculatorResult;
 import org.junit.jupiter.api.Test;
 
 import java.util.Set;

@@ -1,4 +1,4 @@
-package minigames.lotto.config;
+package minigames.games.lotto.config;
 
 public class ConfigLottoGame {
 

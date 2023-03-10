@@ -1,4 +1,4 @@
-import minigames.lotto.input.NumberTaker;
+import minigames.games.lotto.input.NumberTaker;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
