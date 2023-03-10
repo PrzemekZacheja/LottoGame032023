@@ -8,6 +8,7 @@ public class MessageProvider {
     public static final String LOOSE_MESSAGE = "Oh my Gosh, you LOOSE";
     public static final String INPUT_NOT_NUMBER = "Error, You must input only numbers";
     public static final String INPUT_OVER_THE_RANGE = "Your number is over the range from %d to %d%n";
+    public static final String INPUT_NEXT_NUMBER = "Input next number in range from %d to %d %n";
 
     public MessageProvider() {
     }
