@@ -18,7 +18,7 @@ class NumberTakerTest {
         String input = "1 2 3 4 5 6";
         Scanner scanner = mockScannerInput(input);
         //when
-        Set<Integer> sixNumbersFromPlayer = taker.takeSixNumbersFromPlayer(scanner);
+        Set<Integer> sixNumbersFromPlayer = taker.takeNumbersFromPlayer(scanner);
         //then
         assertThat(sixNumbersFromPlayer.size()).isEqualTo(6);
     }
@@ -31,7 +31,7 @@ class NumberTakerTest {
         Scanner scanner = mockScannerInput(input);
         Set<Integer> correct = Set.of(1, 2, 3, 4, 5, 6);
         //when
-        Set<Integer> sixNumbersFromPlayer = taker.takeSixNumbersFromPlayer(scanner);
+        Set<Integer> sixNumbersFromPlayer = taker.takeNumbersFromPlayer(scanner);
         //then
         assertThat(sixNumbersFromPlayer).isEqualTo(correct);
     }
@@ -44,7 +44,7 @@ class NumberTakerTest {
         Scanner scanner = mockScannerInput(input);
         Set<Integer> correct = Set.of(1, 2, 3, 4, 5, 6);
         //when
-        Set<Integer> sixNumbersFromPlayer = taker.takeSixNumbersFromPlayer(scanner);
+        Set<Integer> sixNumbersFromPlayer = taker.takeNumbersFromPlayer(scanner);
         //then
         assertThat(sixNumbersFromPlayer).isEqualTo(correct);
     }

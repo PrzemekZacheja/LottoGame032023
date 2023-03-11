@@ -20,11 +20,11 @@ public class LottoGame implements IGame {
 
     @Override
     public void startGame() {
-        Set<Integer> sixNumbersFromPlayer = numberTaker.takeSixNumbersFromPlayer(scanner);
-        messageProvider.showInputNumbersFromPlayer(sixNumbersFromPlayer);
+        Set<Integer> takeNumbersFromPlayer = numberTaker.takeNumbersFromPlayer(scanner);
+        messageProvider.showInputNumbersFromPlayer(takeNumbersFromPlayer);
         Set<Integer> randomNumbers = numberMaker.getRandomNumbers();
         messageProvider.showRandomWinnerNumbers(randomNumbers);
-        boolean result = CalculatorResult.calculateResult(sixNumbersFromPlayer, randomNumbers);
+        boolean result = CalculatorResult.calculateResult(takeNumbersFromPlayer, randomNumbers);
         messageProvider.printResult(result);
 
     }
