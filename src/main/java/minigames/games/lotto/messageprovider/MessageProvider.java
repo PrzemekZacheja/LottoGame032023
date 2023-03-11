@@ -11,6 +11,8 @@ public class MessageProvider {
     public static final String INPUT_NOT_NUMBER = "Error, You must input only numbers";
     public static final String INPUT_OVER_THE_RANGE = "Your number is over the range from %d to %d%n";
     public static final String INPUT_NEXT_NUMBER = "Input next number in range from %d to %d %n";
+    public static final String START_GAME_INFO = "You are using a Lotto simulator application. " +
+            "Enter 6 numbers from 1 to 99 to find out if you matched the winning numbers.\n";
 
     public MessageProvider() {
     }

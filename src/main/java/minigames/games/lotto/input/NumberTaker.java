@@ -15,11 +15,8 @@ public class NumberTaker {
         setOfNumbers = new HashSet<>();
     }
 
-    private boolean isInRange(int number) {
-        return number >= ConfigLottoGame.MIN_NUMBER_ORIGIN && number <= ConfigLottoGame.MAX_BOUND_NUMBER_FROM_USER;
-    }
-
     public Set<Integer> takeSixNumbersFromPlayer(Scanner scanner) {
+        System.out.println(MessageProvider.START_GAME_INFO);
         while (setOfNumbers.size() < ConfigLottoGame.NUMBERS_IN_GAME) {
             System.out.printf(MessageProvider.INPUT_NEXT_NUMBER, ConfigLottoGame.MIN_NUMBER_ORIGIN,
                     ConfigLottoGame.MAX_BOUND_NUMBER_FROM_USER);
@@ -40,6 +37,10 @@ public class NumberTaker {
         }
         scanner.close();
         return setOfNumbers;
+    }
+
+    private boolean isInRange(int number) {
+        return number >= ConfigLottoGame.MIN_NUMBER_ORIGIN && number <= ConfigLottoGame.MAX_BOUND_NUMBER_FROM_USER;
     }
 
 }
