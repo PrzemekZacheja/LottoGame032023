@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 
-public class NumberMaker {
+class NumberMaker {
 
     Set<Integer> getRandomNumbers() {
         SecureRandom random = new SecureRandom();
