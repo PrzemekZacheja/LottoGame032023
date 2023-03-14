@@ -7,6 +7,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 @AllArgsConstructor
+public
 class LottoGame implements IGame {
 
     private final NumberTaker numberTaker;

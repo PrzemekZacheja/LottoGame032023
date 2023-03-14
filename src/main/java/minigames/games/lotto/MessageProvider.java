@@ -2,7 +2,7 @@ package minigames.games.lotto;
 
 import java.util.Set;
 
-class MessageProvider {
+public class MessageProvider {
 
     public static final String YOURS_NUMBERS_ARE = "Yours numbers are: ->";
     public static final String THE_WINNER_NUMBERS_ARE = "The WINNER numbers are: ";
@@ -17,21 +17,21 @@ class MessageProvider {
     public MessageProvider() {
     }
 
-    public void printResult(boolean result) {
+    void printResult(boolean result) {
         System.out.println(result ? WINNER_MESSAGE : LOOSE_MESSAGE);
     }
 
-    public void showInputNumbersFromPlayer(Set<Integer> sixNumbersFromPlayer) {
+    void showInputNumbersFromPlayer(Set<Integer> sixNumbersFromPlayer) {
         System.out.println(YOURS_NUMBERS_ARE);
         printSet(sixNumbersFromPlayer);
     }
 
-    private void printSet(Set<Integer> setToPrint) {
+    void printSet(Set<Integer> setToPrint) {
         setToPrint.forEach(a -> System.out.print(a + " "));
         System.out.println();
     }
 
-    public void showRandomWinnerNumbers(Set<Integer> randomNumbers) {
+    void showRandomWinnerNumbers(Set<Integer> randomNumbers) {
         System.out.println(THE_WINNER_NUMBERS_ARE);
         printSet(randomNumbers);
     }

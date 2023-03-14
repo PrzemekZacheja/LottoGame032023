@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-class NumberTaker {
+public class NumberTaker {
 
     private final Set<Integer> setOfNumbers;
 
@@ -12,7 +12,7 @@ class NumberTaker {
         setOfNumbers = new HashSet<>();
     }
 
-    public Set<Integer> takeNumbersFromPlayer(Scanner scanner) {
+    Set<Integer> takeNumbersFromPlayer(Scanner scanner) {
         System.out.println(MessageProvider.START_GAME_INFO);
         while (setOfNumbers.size() < ConfigLottoGame.NUMBERS_IN_GAME) {
             System.out.printf(MessageProvider.INPUT_NEXT_NUMBER, ConfigLottoGame.MIN_NUMBER_ORIGIN,
