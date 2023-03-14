@@ -1,13 +1,11 @@
-package minigames.games.lotto.logic;
-
-import minigames.games.lotto.config.ConfigLottoGame;
+package minigames.games.lotto;
 
 import java.security.SecureRandom;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 
-public class NumberMaker {
+class NumberMaker {
 
     public Set<Integer> getRandomNumbers() {
         SecureRandom random = new SecureRandom();

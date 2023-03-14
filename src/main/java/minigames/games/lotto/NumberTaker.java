@@ -1,13 +1,10 @@
-package minigames.games.lotto.input;
-
-import minigames.games.lotto.config.ConfigLottoGame;
-import minigames.games.lotto.messageprovider.MessageProvider;
+package minigames.games.lotto;
 
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class NumberTaker {
+class NumberTaker {
 
     private final Set<Integer> setOfNumbers;
 

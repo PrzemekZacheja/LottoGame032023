@@ -1,17 +1,13 @@
 package minigames.games.lotto;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
 import minigames.games.IGame;
-import minigames.games.lotto.input.NumberTaker;
-import minigames.games.lotto.logic.CalculatorResult;
-import minigames.games.lotto.logic.NumberMaker;
-import minigames.games.lotto.messageprovider.MessageProvider;
 
 import java.util.Scanner;
 import java.util.Set;
 
-@Data
-public class LottoGame implements IGame {
+@AllArgsConstructor
+class LottoGame implements IGame {
 
     private final NumberTaker numberTaker;
     private final Scanner scanner;

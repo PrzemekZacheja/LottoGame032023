@@ -1,6 +1,6 @@
-package minigames.games.lotto.config;
+package minigames.games.lotto;
 
-public class ConfigLottoGame {
+class ConfigLottoGame {
 
     public static final int NUMBERS_IN_GAME = 6;
     public static final int MAX_NUMBERS_BOUND = 100;

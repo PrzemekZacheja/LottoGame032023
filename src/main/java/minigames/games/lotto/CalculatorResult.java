@@ -1,8 +1,8 @@
-package minigames.games.lotto.logic;
+package minigames.games.lotto;
 
 import java.util.Set;
 
-public class CalculatorResult {
+class CalculatorResult {
 
     public static boolean calculateResult(Set<Integer> sixNumbersFromPlayer, Set<Integer> randomNumbers) {
         return sixNumbersFromPlayer.containsAll(randomNumbers);

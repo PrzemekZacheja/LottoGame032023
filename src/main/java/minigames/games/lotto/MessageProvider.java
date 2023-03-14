@@ -1,8 +1,8 @@
-package minigames.games.lotto.messageprovider;
+package minigames.games.lotto;
 
 import java.util.Set;
 
-public class MessageProvider {
+class MessageProvider {
 
     public static final String YOURS_NUMBERS_ARE = "Yours numbers are: ->";
     public static final String THE_WINNER_NUMBERS_ARE = "The WINNER numbers are: ";
