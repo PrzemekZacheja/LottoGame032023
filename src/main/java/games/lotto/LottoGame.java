@@ -15,14 +15,14 @@ class LottoGame implements IGame {
     private final MessageProvider messageProvider;
 
     @Override
-    public void startGame() {
+    public boolean startGame() {
         Set<Integer> takeNumbersFromPlayer = numberTaker.takeNumbersFromPlayer(scanner);
         messageProvider.showInputNumbersFromPlayer(takeNumbersFromPlayer);
         Set<Integer> randomNumbers = numberMaker.getRandomNumbers();
         messageProvider.showRandomWinnerNumbers(randomNumbers);
         boolean result = CalculatorResult.calculateResult(takeNumbersFromPlayer, randomNumbers);
         messageProvider.printResult(result);
-
+        return result;
     }
 
 }
