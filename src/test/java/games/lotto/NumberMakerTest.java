@@ -1,4 +1,4 @@
-package minigames.games.lotto;
+package games.lotto;
 
 import org.junit.jupiter.api.Test;
 

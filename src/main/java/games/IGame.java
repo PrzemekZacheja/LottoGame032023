@@ -1,4 +1,4 @@
-package minigames;
+package games;
 
 public interface IGame {
 

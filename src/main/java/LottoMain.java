@@ -1,4 +1,4 @@
-import minigames.games.lotto.LottoGameStarter;
+import games.lotto.LottoGameStarter;
 
 public class LottoMain {
 

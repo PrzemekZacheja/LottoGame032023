@@ -1,4 +1,4 @@
-package minigames.games.lotto;
+package games.lotto;
 
 import java.security.SecureRandom;
 import java.util.Set;

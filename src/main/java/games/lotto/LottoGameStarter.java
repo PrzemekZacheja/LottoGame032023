@@ -1,6 +1,6 @@
-package minigames.games.lotto;
+package games.lotto;
 
-import minigames.IGame;
+import games.IGame;
 
 import java.util.Scanner;
 

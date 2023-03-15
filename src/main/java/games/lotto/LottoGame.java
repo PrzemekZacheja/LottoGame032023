@@ -1,7 +1,7 @@
-package minigames.games.lotto;
+package games.lotto;
 
+import games.IGame;
 import lombok.AllArgsConstructor;
-import minigames.IGame;
 
 import java.util.Scanner;
 import java.util.Set;
