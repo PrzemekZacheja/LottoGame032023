@@ -1,14 +1,13 @@
 package games.lotto;
 
-import games.IGame;
+import games.Game;
 
 import java.util.Scanner;
 
 public class LottoGameStarter {
 
     public void startLottoGame() {
-        IGame lotek = new LottoGame(new NumberTaker(), new Scanner(System.in), new NumberMaker(), new MessageProvider());
-
+        Game lotek = new LottoGame(new NumberTaker(), new Scanner(System.in), new NumberMaker(), new MessageProvider(), new CalculatorResult());
         lotek.startGame();
     }
 }

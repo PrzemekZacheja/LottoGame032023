@@ -1,6 +1,6 @@
 package games;
 
-public interface IGame {
+public interface Game {
 
     boolean startGame();
 }

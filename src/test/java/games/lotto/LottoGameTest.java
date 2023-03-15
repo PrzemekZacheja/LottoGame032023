@@ -60,8 +60,9 @@ class LottoGameTest {
         Scanner scanner = mockScannerInput(inputNumbers);
         NumberMaker numberMaker = Mockito.mock(NumberMaker.class);
         MessageProvider messageProvider = new MessageProvider();
+        CalculatorResult calculatorResult = new CalculatorResult();
 
-        LottoGame lottoGame = new LottoGame(numberTaker, scanner, numberMaker, messageProvider);
+        LottoGame lottoGame = new LottoGame(numberTaker, scanner, numberMaker, messageProvider, calculatorResult);
 
         //when
         when(numberMaker.getRandomNumbers()).thenReturn(Set.of(1, 2, 3, 4, 5, 6));

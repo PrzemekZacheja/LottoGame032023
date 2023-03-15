@@ -8,13 +8,15 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class CalculatorResultTest {
 
+    CalculatorResult calculatorResult = new CalculatorResult();
+
     @Test
     void should_return_true_when_sets_are_the_same() {
         //given
         Set<Integer> first = Set.of(1, 2, 3, 4, 5, 6);
         Set<Integer> second = Set.of(1, 2, 3, 4, 5, 6);
         //when
-        boolean calculatedResult = CalculatorResult.calculateResult(first, second);
+        boolean calculatedResult = calculatorResult.calculateResult(first, second);
         //then
         assertThat(calculatedResult).isTrue();
     }
@@ -25,7 +27,7 @@ class CalculatorResultTest {
         Set<Integer> first = Set.of(1, 2, 3, 4, 5, 6);
         Set<Integer> second = Set.of(1, 2, 3, 4, 5, 7);
         //when
-        boolean calculatedResult = CalculatorResult.calculateResult(first, second);
+        boolean calculatedResult = calculatorResult.calculateResult(first, second);
         //then
         assertThat(calculatedResult).isFalse();
     }
