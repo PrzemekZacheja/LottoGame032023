@@ -1,6 +1,8 @@
 package games;
 
+import games.lotto.ResultReturner;
+
 public interface Game {
 
-    boolean startGame();
+    ResultReturner startGame();
 }

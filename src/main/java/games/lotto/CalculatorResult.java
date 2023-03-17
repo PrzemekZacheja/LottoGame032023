@@ -4,7 +4,7 @@ import java.util.Set;
 
 class CalculatorResult {
 
-    boolean calculateResult(Set<Integer> sixNumbersFromPlayer, Set<Integer> randomNumbers) {
-        return sixNumbersFromPlayer.containsAll(randomNumbers);
+    ResultReturner calculateResult(Set<Integer> sixNumbersFromPlayer, Set<Integer> randomNumbers) {
+        return new ResultReturner(sixNumbersFromPlayer.containsAll(randomNumbers));
     }
 }

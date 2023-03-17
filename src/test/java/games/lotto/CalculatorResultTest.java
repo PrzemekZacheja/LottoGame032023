@@ -16,9 +16,9 @@ class CalculatorResultTest {
         Set<Integer> first = Set.of(1, 2, 3, 4, 5, 6);
         Set<Integer> second = Set.of(1, 2, 3, 4, 5, 6);
         //when
-        boolean calculatedResult = calculatorResult.calculateResult(first, second);
+        ResultReturner result = calculatorResult.calculateResult(first, second);
         //then
-        assertThat(calculatedResult).isTrue();
+        assertThat(result.result()).isTrue();
     }
 
     @Test
@@ -27,8 +27,8 @@ class CalculatorResultTest {
         Set<Integer> first = Set.of(1, 2, 3, 4, 5, 6);
         Set<Integer> second = Set.of(1, 2, 3, 4, 5, 7);
         //when
-        boolean calculatedResult = calculatorResult.calculateResult(first, second);
+        ResultReturner result = calculatorResult.calculateResult(first, second);
         //then
-        assertThat(calculatedResult).isFalse();
+        assertThat(result.result()).isFalse();
     }
 }

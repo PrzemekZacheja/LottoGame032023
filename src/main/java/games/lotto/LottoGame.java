@@ -16,14 +16,14 @@ class LottoGame implements Game {
     private final CalculatorResult calculatorResult;
 
     @Override
-    public boolean startGame() {
+    public ResultReturner startGame() {
         Set<Integer> takeNumbersFromPlayer = numberTaker.takeNumbersFromPlayer(scanner);
         messageProvider.showInputNumbersFromPlayer(takeNumbersFromPlayer);
         Set<Integer> randomNumbers = numberMaker.getRandomNumbers();
         messageProvider.showRandomWinnerNumbers(randomNumbers);
-        boolean result = calculatorResult.calculateResult(takeNumbersFromPlayer, randomNumbers);
-        messageProvider.printResult(result);
-        return result;
+        ResultReturner resultReturner = calculatorResult.calculateResult(takeNumbersFromPlayer, randomNumbers);
+        messageProvider.printResult(resultReturner.result());
+        return resultReturner;
     }
 
 }

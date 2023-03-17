@@ -66,8 +66,30 @@ class LottoGameTest {
 
         //when
         when(numberMaker.getRandomNumbers()).thenReturn(Set.of(1, 2, 3, 4, 5, 6));
+        ResultReturner resultReturner = lottoGame.startGame();
+        boolean result = resultReturner.result();
         //then
-        assertThat(lottoGame.startGame()).isTrue();
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    void should_return_true_for_wrong_numbers() {
+        //given
+        NumberTaker numberTaker = new NumberTaker();
+        String inputNumbers = "1 2 3 4 5 7";
+        Scanner scanner = mockScannerInput(inputNumbers);
+        NumberMaker numberMaker = Mockito.mock(NumberMaker.class);
+        MessageProvider messageProvider = new MessageProvider();
+        CalculatorResult calculatorResult = new CalculatorResult();
+
+        LottoGame lottoGame = new LottoGame(numberTaker, scanner, numberMaker, messageProvider, calculatorResult);
+
+        //when
+        when(numberMaker.getRandomNumbers()).thenReturn(Set.of(1, 2, 3, 4, 5, 6));
+        ResultReturner resultReturner = lottoGame.startGame();
+        boolean result = resultReturner.result();
+        //then
+        assertThat(result).isFalse();
     }
 
 
